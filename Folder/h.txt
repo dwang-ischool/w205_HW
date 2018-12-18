@@ -1,0 +1,500 @@
+   57  ls
+   58  cd week_11
+   59  ls
+   60  cd ..
+   61  cd week_11_update
+   62  ls
+   63  ipython notebook 11.04\ -\ Pandas.Series.ipynb
+   64  ipython notebook 11.04\ -\ Pandas.Series.ipynb
+   65  ipython notebook 11.04\ -\ Pandas.Series.ipynb
+   66  cd
+   67  cd Box\ Sync
+   68  cd Project_2
+   69  ls
+   70  cd RyuTruongWangREPO
+   71  ls
+   72  ipython notebook Dili.ipynb
+   73  ipython notebook Dili.ipynb
+   74  ls
+   75  ipython notebook FileJoining.ipynb
+   76  ipython notebook FileJoining.ipynb
+   77  jupyter lab
+   78  cd
+   79  cd desktop
+   80  cd ..
+   81  cd Box
+   82  cd Box\ Sync
+   83  ls
+   84  cd Project_2
+   85  ls
+   86  cd RyuTruongWangREPO
+   87  ls
+   88  ipython FileJoining.ipynb
+   89  ipython notebook FileJoining.ipynb
+   90  cd desktop
+   91  cd python_course
+   92  cd assignments_upstream_summer18
+   93  ls
+   94  cd SUBMISSIONS
+   95  cd FINAL_EXAM
+   96  ls
+   97  ipython notebook Final+Exam+-+Summer_2018.ipynb
+   98  ipython notebook Final+Exam+-+Summer_2018.ipynb
+   99  cd ..
+  100  ls
+  101  cd ..
+  102  ls
+  103  git stataus
+  104  git status
+  105  git add SUBMISSIONS/FINAL_EXAM/
+  106  git commit "Dili submitting final exam"
+  107  git commit -m "Dili submitting final exam"
+  108  git status
+  109  git push origin master
+  110  cd Box\ Sync
+  111  ls
+  112  cd Project 2
+  113  ls
+  114  cd Project_2
+  115  ls
+  116  cd RyuTruongWangRepo
+  117  ls
+  118  ipython FileJoining.ipynb
+  119  ipython notebook FileJoining.ipynb
+  120  jupyter lab
+  121  ls
+  122  ipython notebook BankableActors.ipynb
+  123  ls
+  124  ipython notebook BATop50Analysis.ipynb
+  125  ls
+  126  ipython notebook IMDBRatingsRuntimeAnalysis.ipynb
+  127  cd desktop
+  128  ls
+  129  cd 
+  130  cd Box\ Sync
+  131  ls
+  132  cd Project_2
+  133  ls
+  134  cd RyuTruongWangRepo
+  135  ls
+  136  ipython notebook BATop50Analysis.ipyn
+  137  ipython notebook BATop50Analysis.ipynb
+  138  ipython notebook BATop50Analysis.ipynb
+  139  ipython notebook BATop50Analysis.ipynb
+  140  ipython notebook BATop50Analysis.ipynb
+  141  git status
+  142  git add .ipynb_checkpoints/
+  143  git add BATop50Analysis.ipynb
+  144  git add test.txt
+  145  git add BankableActors.ipynb
+  146  git add BechdelTestOverDecades.ipynb
+  147  git add Bechdel_JSON_to_CSV.ipynb
+  148  git add Figures/
+  149  git add FileJoining.ipynb
+  150  git add ForbesHighestPaidActresses.ipynb
+  151  git add GeneresBechdelAnalysis.ipynb
+  152  git add IMDBRatingsRuntimeAnalysis.ipynb
+  153  git add RR Analysis.ipynb
+  154  git add RR\ Analysis.ipynb
+  155  git add W200\ Project\ 2\ Presentation.pptx
+  156  git add question\ 1.ipynb
+  157  git add qustion\ 2.ipynb
+  158  git add question\ 2.ipynb
+  159  git status
+  160  git status
+  161  git add Project 2 Proposal.docx
+  162  git add Project\ 2\ Proposal.docx
+  163  git status
+  164  git add
+  165  git add Project2_Report_RichardRyu_TKTruong_DiliWang.pdf
+  166  git status
+  167  git commit -m 'TK Richard Dili submitting Project 2'
+  168  git push origin master
+  169  git status
+  170  cd 
+  171  cd desktop/python-course/assignments_upstream_summer18
+  172  ls
+  173  cd Desktop/python_course/assignments_upstream_summer18
+  174  git status
+  175  git add SUBMISSIONS/project_12/
+  176  git add SUBMISSIONS/project_02/
+  177  git commit -m 'Dili submitting instructions for Project 2 repo'
+  178  git push origin master
+  179  /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libR.dylib ; exit;
+  180  ls
+  181  cd
+  182  ls
+  183  cd Applications
+  184  ls
+  185  cd
+  186  cd Library
+  187  ls
+  188  cd Frameworks
+  189  Frameworks
+  190  cd Frameworks
+  191  cd
+  192  /Library/Frameworks/R.framework/Versions/3.4/Resources/bin/R
+  193  cd/Library/Frameworks/R.framework/Versions/3.4/Resources/bin/R
+  194  cd/Library/Frameworks/R.framework/Versions/3.5/Resources/bin/R
+  195  cd
+  196  cd Box\ Sync
+  197  ls
+  198  cd w203
+  199  ls
+  200  cd Homework
+  201  ls
+  202  cd HW1
+  203  ls
+  204  ipython notebook Dili_Wang_unit_1_hw.ipynb
+  205  cd Box\ Sync
+  206  ls
+  207  cd w203
+  208  ls
+  209  cd Homework
+  210  ls
+  211  cd HW1
+  212  ls
+  213  ipython nbconvert --to pdf Dili_Wang_unit_1_hw.ipynb
+  214  cd
+  215  conda install nbconvert
+  216  cd Box\ Sync
+  217  cd Homework
+  218  cd w203
+  219  cd Homework
+  220  cd HW1
+  221  ipython nbconvert --to pdf Dili_Wang_unit_1_hw.ipynb
+  222  ipython nbconvert --to pdf Dili_Wang_unit_1_hw.ipynb
+  223  ipython notebook Dili_Wang_Dili_Wang_unit_1_hw.ipynb
+  224  ls
+  225  ipython notebook Dili_Wang_unit_1_hw.ipynb
+  226  ipython nbconvert Dili_Wang_unit_1_hw.ipynb
+  227  ipython notebook Dili_Wang_unit_1_hw.ipynb
+  228  ipython nbconvert Dili_Wang_unit_1_hw.ipynb
+  229  cd ..
+  230  cd ..
+  231  ls
+  232  cd Class\ Exercise
+  233  cd Class\ Exercises
+  234  ls
+  235  cd Class\ 2
+  236  ls
+  237  ipython notebook unit_2_ls_ex.ipynb
+  238  cd
+  239  cd Box\ Sync
+  240  ls
+  241  cd w203
+  242  ls
+  243  cd Homework
+  244  ls
+  245  cd HW1
+  246  ls
+  247  ipython notebook Dili_Wang_unit_1_hw.ipynb
+  248  ls
+  249  nbconvert Dili_Wang_unit_1_hw.ipynb
+  250  ipython nbconvert Dili_Wang_unit_1_hw.ipynb
+  251  git clone https://github.com/git/git
+  252  cd Box\ Sync
+  253  ls
+  254  mkdir w205
+  255  ls
+  256  cd w205
+  257  git clone https://github.com/mids-w205-martin-mims/course-content.git
+  258  git remote -v
+  259  cd course-content
+  260  ls
+  261  git remote -v
+  262  cd ..
+  263  git clone cd course-content
+  264  git remote add upstream https://github.com/mids-w205-martin-mims/course-content.git
+  265  cd course-content
+  266  git remote add upstream https://github.com/mids-w205-martin-mims/course-content.git
+  267  git remote remove origin
+  268  git remote add origin https://github.com/dwang-ischool/Backup-Repo
+  269  git status
+  270  git remote -v
+  271  cd
+  272  cd Box\ Sync 
+  273  cd w205
+  274  ls
+  275  cd course-content
+  276  ls
+  277  cd ..
+  278  git clone https://github.com/mids-w205-martin-mims/assignment-01-dwang-ischool.git
+  279  ls
+  280  cd assignment-01-dwang-ischool
+  281  git remote add upstream https://github.com/mids-w205-martin-mims/assignment-01-dwang-ischool.git
+  282  git remote -v
+  283  echo "test git commit" --> test.txt
+  284  git status
+  285  git add .
+  286  git status
+  287  git commit -m "dili adding a file for fun"
+  288  git push origin master
+  289  rm test.txt
+  290  git status
+  291  git add .
+  292  git commit -m "dili remove test file"
+  293  git push origin master
+  294  cd ..
+  295  git course-content
+  296  cd course-content
+  297  git status
+  298  git remote -v
+  299  git push origin master
+  300  ssh science@167.99.110.250
+  301  ssh science@167.99.110.250
+  302  cd Box
+  303  cd Box\ Sync
+  304  ls
+  305  cd w203
+  306  ls
+  307  cd Class\ Exercise
+  308  cd Class\ Exercises
+  309  ls
+  310  ls
+  311  cd Unit\ 4
+  312  ls
+  313  ipython unit_4_ls_ex.ipynb
+  314  ipython notebook unit_4_ls_ex.ipynb
+  315  cd Applications
+  316  ls
+  317  cd 
+  318  \Applications
+  319  \Applicationsls
+  320  /Applications/
+  321  /Applications
+  322  cd Library
+  323  ls
+  324  /Library/google-cloud-sdk/
+  325  /Library/google-cloud-sdk
+  326  cd
+  327  cd Box\ Sync
+  328  ls
+  329  cd w205
+  330  ls
+  331  cd google-cloud-sdk
+  332  cd ..
+  333  ./google-cloud-sdk/install.sh
+  334  ls
+  335  cd Box\ Sync
+  336  ls
+  337  cd w205
+  338  ./google-cloud-sdk/bin/gcloud init
+  339  bq query --use_legacy_sql=false '
+  340      SELECT count(*)
+  341      FROM
+  342         `bigquery-public-data.san_francisco.bikeshare_trips`'
+  343  bq
+  344  bq query --use_legacy_sql=false '
+  345      SELECT count(*)
+  346      FROM
+  347         `bigquery-public-data.san_francisco.bikeshare_trips`'
+  348  bq help
+  349  bq query
+  350  bq query --use_legacy_sql_false '
+  351  SELECT count(*)
+  352  FROM `bigquery-public-data.san_francisco.bikeshare_trips`'
+  353  bq query --use_legacy_sql=false '
+  354  SELECT count(*)
+  355  FROM `bigquery-public-data.san_francisco.bikeshare_trips`'
+  356  bq query --use_legacy_sql=false '
+  357  SELECT count(*)
+  358  FROM `bigquery-public-data.san_francisco.bikeshare_trips`'
+  359  gcloud components list
+  360  gcloud components update
+  361  ./google-cloud-sdk/bin/gcloud init
+  362  bq help
+  363  bq query 'select count(*) from publicdata:samples.shakespeare'
+  364  bq query --use_legacy_sql=false '
+  365  SELECT count(*)
+  366  FROM `bigquery-public-data.san_francisco.bikeshare_status`'
+  367  cd
+  368  ssh science@167.99.110.250
+  369  ssh science@167.99.110.250
+  370  ssh science@167.99.110.250
+  371  ssh science@167.99.110.250
+  372  ssh science@167.99.110.250
+  373  ssh science@167.99.110.250
+  374  ssh science@167.99.110.250
+  375  ssh science@167.99.110.250
+  376  man ssh
+  377  ssh -o TCPKeepAlive science@167.99.110.250
+  378  ssh science@167.99.110.250
+  379  ssh science@167.99.110.250
+  380  ssh science@167.99.110.250
+  381  ssh science@167.99.110.250
+  382  cd Box\ Sync
+  383  ls
+  384  cd w203
+  385  ls
+  386  cd Class\ Exercises
+  387  ls
+  388  cd Unit\ 5
+  389  ls
+  390  ipython notebook unit_5_ls_ex.ipynb
+  391  ssh science@167.99.110.250
+  392  ls
+  393  ssh science@167.99.110.250
+  394  ssh science@167.99.110.250
+  395  ssh science@167.99.110.250
+  396  brew install mosh
+  397  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  398  brew install mosh
+  399  mosh science@167.99.110.250
+  400  jupyter notebook
+  401  cd Box\ Sync
+  402  ls
+  403  cd w203
+  404  ls
+  405  cd Class Exercises
+  406  cd Class\ Exercises
+  407  ls
+  408  cd Unit 6
+  409  cd Unit\ 6
+  410  l
+  411  ls
+  412  ipython notebook unit_6_ls_ex.ipynb
+  413  ls
+  414  cd Box\ Sync
+  415  ls
+  416  cd w203
+  417  ls
+  418  cd Class\ Exercises
+  419  ls
+  420  cd Unit\ 6
+  421  ls
+  422  ipython notebook unit_6_ls_ex.ipynb
+  423  cd ..
+  424  ls
+  425  cd Unit\ 5
+  426  ls
+  427  ipython notebook unit_5_ls_ex.ipynb
+  428  jupyter notebook
+  429  mosh science@167.99.110.250
+  430  mosh science@167.99.110.250
+  431  mosh science@167.99.110.250
+  432  mosh science@167.99.110.250
+  433  mosh science@67.99.110.250
+  434  mosh science@167.99.110.250
+  435  mosh@167.99.110.250
+  436  mosh science@167.99.110.250
+  437  cd Box\ Sync/w203/Class_Exercise/c7
+  438  cd Box\ Sync/w203/Class_Exercises/c7
+  439  ls
+  440  ipython notebook unit_7_ls_ex.ipynb
+  441  mosh science @167.99.110.250
+  442  mosh science@167.99.110.250
+  443  cd w205
+  444  mosh science@167.99.110.250
+  445  mosh science@167.99.110.250
+  446  jupyter notebook
+  447  jupyter notebook
+  448  jupyter notebook
+  449  mosh science@167.99.110.250
+  450  mosh science@167.99.110.250
+  451  jupyter notebook
+  452  jupyter notebook
+  453  mosh science@167.99.110.250
+  454  terminal
+  455  jupyter
+  456  jupyter notebook
+  457  mosh science@167.99.110.250
+  458  mosh science@167.99.110.250
+  459  mosh science@167.99.110.250
+  460  jupyter notebook
+  461  jupyter notebook
+  462  conda install nbconvert
+  463  cd Box\ Sync
+  464  ls
+  465  cd w203
+  466  ls
+  467  cd Homework
+  468  ls
+  469  cd HW10
+  470  ls
+  471  Jupyter nbconvert --to pdf Wang_Dili_unit_10_hw.ipynb
+  472  jupyter notebook
+  473  cd
+  474  jupyter notebook
+  475  jupyter notebook
+  476  lol
+  477  jupyter notebok
+  478  jupyter notebook
+  479  jupyter notebook
+  480  jupyter notebook
+  481  jupyter notebook
+  482  jupyter notebook
+  483  jupyter notebook
+  484  mdkir ~/w205/full-stack2/
+  485  mosh science@167.99.110.250
+  486  mosh science@167.99.110.250
+  487  sudo apt install htop
+  488  sudo apt install htop
+  489  jupyter notebook
+  490  jupyter notebook
+  491  jupyter notebook
+  492  mosh science@167.99.110.250
+  493  mosh science@167.99.110.250
+  494  mosh science@167.99.110.250
+  495  mosh science@167.99.110.250
+  496  mosh science@167.99.110.250
+  497  mosh science@167.99.110.250
+  498  mosh science@167.99.110.250
+  499  mosh science@167.99.110.250
+  500  mosh science@167.99.110.250
+  501  mosh science@167.99.110.250
+  502  ls
+  503  cd Box\ Sync
+  504  ls
+  505  cd w205
+  506  ls
+  507  cd course-content
+  508  git remote -v
+  509  git remote remove origin
+  510  git remote -v
+  511  git remote add origin https://github.com/dwang-ischool/w205
+  512  git remote -v
+  513  git pull upstream master
+  514  git pull upstream master
+  515  git push origin master
+  516  cd
+  517  ls
+  518  cd Box\ Sync
+  519  cd w205
+  520  ls
+  521  cd assignment-01-dwang-ischool/
+  522  git remote -v
+  523  git remote remove origin
+  524  git remote add origin https://github.com/dwang-ischool/w205_HW
+  525  git pull upstream master
+  526  ls
+  527  cd ..
+  528  git clone https://github.com/mids-w205-martin-mims/assignment-02-dwang-ischool
+  529  git clone https://github.com/mids-w205-martin-mims/assignment-03-dwang-ischool
+  530  ls
+  531  git clone https://github.com/mids-w205-martin-mims/assignment-04-dwang-ischool
+  532  git clone https://github.com/mids-w205-martin-mims/assignment-054-dwang-ischool
+  533  git clone https://github.com/mids-w205-martin-mims/assignment-05-dwang-ischool
+  534  git clone https://github.com/mids-w205-martin-mims/assignment-06-dwang-ischool
+  535  git clone https://github.com/mids-w205-martin-mims/assignment-07-dwang-ischool
+  536  git clone https://github.com/mids-w205-martin-mims/assignment-08-dwang-ischool
+  537  git clone https://github.com/mids-w205-martin-mims/assignment-09-dwang-ischool
+  538  git clone https://github.com/mids-w205-martin-mims/assignment-010-dwang-ischool
+  539  git clone https://github.com/mids-w205-martin-mims/assignment-10-dwang-ischool
+  540  git clone https://github.com/mids-w205-martin-mims/assignment-11-dwang-ischool
+  541  git clone https://github.com/mids-w205-martin-mims/assignment-12-dwang-ischool
+  542  git clone https://github.com/dwang-ischool/w205_HW
+  543  ls
+  544  git clone https://github.com/dwang-ischool/w205_HW
+  545  cd w205_HW
+  546  ls
+  547  git remote -v
+  548  git pull origin master
+  549  git status
+  550  git add .
+  551  git push origin master
+  552  git commit -m "copy"
+  553  git push origin master
+  554  ls
+  555  cd Folder
+  556  history > h.txt
