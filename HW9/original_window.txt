@@ -1,0 +1,16 @@
+   49  cd w205
+   50  ls
+   51  git clone https://github.com/mids-w205-martin-mims/assignment-09-dwang-ischool.git
+   52  cd assignment-09-dwang-ischool/
+   53  cp ~/w205/course-content/09-Ingesting-Data/docker-compose.yml .
+   54  cp ~/w205/course-content/09-Ingesting-Data/*.py .
+   55  cat docker-compose.yml
+   56  docker-compose up -d
+   57  docker-compose ps
+   58  docker-compose exec kafka kafka-topics --create --topic events --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+   59  cat basic_game_api.py
+   60  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/basic_game_api.py flask run
+   61  cat game_api.py
+   62  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/game_api.py flask run
+   63  docker-compose down
+   64  history --> original_window.txt

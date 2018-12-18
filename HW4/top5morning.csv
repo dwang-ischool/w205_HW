@@ -1,0 +1,7 @@
+
+start_station_id,start_station_name,end_station_id,end_station_name,trips,avg_duration_min
+50,Harry Bridges Plaza (Ferry Building),61,2nd at Townsend,4556,9.59
+74,Steuart at Market,61,2nd at Townsend,3796,8.62
+69,San Francisco Caltrain 2 (330 Townsend),65,Townsend at 7th,3548,4.59
+70,San Francisco Caltrain (Townsend at 4th),51,Embarcadero at Folsom,3372,10.46
+70,San Francisco Caltrain (Townsend at 4th),55,Temporary Transbay Terminal (Howard at Beale),3137,11.39

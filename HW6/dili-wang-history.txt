@@ -1,0 +1,27 @@
+    1  cd 
+    2  cd w205
+    3  ls
+    4  git clone https://github.com/mids-w205-martin-mims/assignment-06-dwang-ischool
+    5  ls
+    6  cd assignment-06-dwang-ischool
+    7  cp ~/w205/kafka/docker-compose.yml .
+    8  ls
+    9  cat docker-compose.yml
+   10  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+   11  docker-compose up -d
+   12  docker-compose logs -f kafka
+   13  docker-compose ps
+   14  docker-compose exec kafka kafka-topics --describe --topic foo --zookeeper zookeeper:32181
+   15  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+   16  docker-compose exec kafka kafka-topics --describe --topic foo --zookeeper zookeeper:32181
+   17  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json"
+   18  docker-compose exec mids bash -c "cat /w205/assignment-06-dwang-ischool/assessment-attempts-20180128-121051-nested.json"
+   19  docker-compose exec mids bash -c "cat /w205/assignment-06-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.'"
+   20  docker-compose exec mids bash -c "cat /w205/assignment-06-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c"
+   21  docker-compose exec mids bash -c "cat /w205/assignment-06-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+   22  docker-compose exec kafka kafka-console-consumer --bootstrap-server kafka:29092 --topic foo --from-beginning --max-messages 42
+   23  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e"
+   24  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e" | wc -l
+   25  history > dili-wang-history.txt
+   26  docker-compose down
+   27  history > dili-wang-history.txt

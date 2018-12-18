@@ -1,0 +1,52 @@
+    1  ls
+    2  cd w205
+    3  ls
+    4  docker run redis
+    5  docker run -d redis
+    6  docker ps
+    7  docker rm -f kafka_mids_1 
+    8  docker rm -f kafka_zookeeper_1 
+    9  docker rm -f kafka_kafka_1 
+   10  docker rm -f gracious_fermi 
+   11  docker ps -a
+   12  docker rm -f jovial_minsky 
+   13  docker ps -a
+   14  cd ~/w205/course-content
+   15  git pull --all
+   16  mkdir ~/w205/assignment-05-dwang-ischool/redis-standalone
+   17  cd ~/w205/assignment-05-dwang-ischool/redis-standalone
+   18  cp ../../course-content/05-Storing-Data-II/example-0-docker-compose.yml docker-compose.yml
+   19  cat docker-compose.yml
+   20  docker-compose up -d
+   21  docker-compose ps
+   22  docker-compose logs redis
+   23  ipython
+   24  docker-compose down
+   25  docker-compose ps
+   26  cat docker-compose.yml
+   27  docker-compose up -d
+   28  docker-compose ps
+   29  docker-compose logs redis
+   30  docker-compose exec mids bash
+   31  docker-compose ps
+   32  docker-compose down
+   33  docker-compose ps
+   34  cat docker-compose.yml
+   35  docker-compose up -d
+   36  docker-compose exec mids jupyter notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root
+   37  docker-compose down
+   38  docker-compose ps
+   39  cat docker-compose.yml
+   40  docker-compose up -d
+   41  docker-compose ps
+   42  docker-compose logs mids
+   43  docker-compose down
+   44  curl -L -o trips.csv https://goo.gl/QvHLKe
+   45  cat docker-compose.yml
+   46  docker-compose up -d
+   47  docker-compose logs mids
+   48  docker-compose down
+   49  history> diliwang-history.txt
+   50  rm diliwang-history.txt
+   51  cd ..
+   52  history> diliwang-history.txt

@@ -1,0 +1,39 @@
+raw_assessments = spark \
+  .read \
+  .format("kafka") \
+  .option("kafka.bootstrap.servers", "kafka:29092") \
+  .option("subscribe","assessments") \
+  .option("startingOffsets", "earliest") \
+  .option("endingOffsets", "latest") \
+  .load() 
+raw_assessments.cache()
+raw_assessments.printSchema()
+assessments = raw_assessments.select(raw_assessments.value.cast('string'))
+import json
+extracted_assessments = assessments.rdd.map(lambda x: json.loads(x.value)).toDF()
+extracted_assessments.show()
+extracted_assessments.printSchema()
+extracted_assessments.registerTempTable('assessments')
+extracted_assessments.show()
+spark.sql("select base_exam_id from assessments limit 10")
+spark.sql("select base_exam_id from assessments limit 10").show()
+spark.sql("select base_exam_id, sequence.value.value from assessments limit 10").show()
+spark.sql("select base_exam_id, sequences.value.value from assessments limit 10").show()
+spark.sql("select base_exam_id, sequences, starting_at from assessments limit 10").show()
+spark.sql("select base_exam_id, started_at, sequences from assessments limit 10").show()
+spark.sql("select base_exam_id, started_at, sequences.questions from assessments limit 10").show()
+spark.sql("select base_exam_id, started_at, certification,  sequences.questions from assessments limit 10").show()
+spark.sql("select base_exam_id, started_at, certification,  sequences.questions from assessments limit 20").show()
+some_assessments_data = spark.sql("select base_exam_id, started_at, certification,  sequences.questions from assessments limit 20").show()
+some_assessments_data.write.parquet("/tmp/some_assessments_data")
+some_assessments_data.show()
+some_assessments_data = spark.sql("select base_exam_id, started_at, certification,  sequences.questions from assessments limit 20").show()
+some_assessments_data.show()
+some_assessments_data = spark.sql("select base_exam_id, started_at, certification,  sequences.questions from assessments limit 20")
+some_assessments_data.show()
+some_assessments_data.write.parquet("/tmp/some_assessments_data")
+from pyspark.sql import Row
+extracted_assessments2 = assessments.rdd.map(lambda x: Row(**json.loads(x.value))).toDF()
+extracted_assessments2.show()
+extracted_assessments2.write.parquet("/tmp/extracted_assessments")
+exit()

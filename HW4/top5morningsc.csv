@@ -1,0 +1,7 @@
+
+start_station_id,end_station_id,total_trips,subscriber_trips,customer_trips
+50,61,4556,4489,67
+74,61,3796,3746,50
+69,65,3548,3496,52
+70,51,3372,3349,23
+70,55,3137,3099,38

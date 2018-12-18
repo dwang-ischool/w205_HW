@@ -1,0 +1,22 @@
+
+start_station_id,start_station_name,end_station_id,end_station_name,total_trips,subscriber_trips,customer_trips
+50,Harry Bridges Plaza (Ferry Building),60,Embarcadero at Sansome,9150,5483,3667
+69,San Francisco Caltrain 2 (330 Townsend),65,Townsend at 7th,8508,8305,203
+61,2nd at Townsend,50,Harry Bridges Plaza (Ferry Building),7620,6931,689
+50,Harry Bridges Plaza (Ferry Building),61,2nd at Townsend,6888,6332,556
+60,Embarcadero at Sansome,74,Steuart at Market,6874,6200,674
+65,Townsend at 7th,69,San Francisco Caltrain 2 (330 Townsend),6836,6641,195
+51,Embarcadero at Folsom,70,San Francisco Caltrain (Townsend at 4th),6351,6158,193
+70,San Francisco Caltrain (Townsend at 4th),50,Harry Bridges Plaza (Ferry Building),6215,5709,506
+74,Steuart at Market,61,2nd at Townsend,6039,5758,281
+74,Steuart at Market,70,San Francisco Caltrain (Townsend at 4th),5959,5695,264
+55,Temporary Transbay Terminal (Howard at Beale),70,San Francisco Caltrain (Townsend at 4th),5796,5699,97
+50,Harry Bridges Plaza (Ferry Building),70,San Francisco Caltrain (Townsend at 4th),5395,4980,415
+65,Townsend at 7th,70,San Francisco Caltrain (Townsend at 4th),5358,5174,184
+64,2nd at South Park,77,Market at Sansome,5337,5205,132
+70,San Francisco Caltrain (Townsend at 4th),55,Temporary Transbay Terminal (Howard at Beale),5196,5089,107
+67,Market at 10th,69,San Francisco Caltrain 2 (330 Townsend),5118,5008,110
+74,Steuart at Market,60,Embarcadero at Sansome,5110,4263,847
+77,Market at Sansome,64,2nd at South Park,5063,4919,144
+60,Embarcadero at Sansome,50,Harry Bridges Plaza (Ferry Building),4737,3099,1638
+69,San Francisco Caltrain 2 (330 Townsend),39,Powell Street BART,4492,4352,140

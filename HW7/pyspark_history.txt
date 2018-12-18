@@ -1,0 +1,21 @@
+messages = spark \
+  .read \
+  .format("kafka") \
+  .option("kafka.bootstrap.servers", "kafka:29092") \
+  .option("subscribe","AssessmentData")\
+  .option("startingOffsets", "earliest") \
+  .option("endingOffsets", "latest") \
+  .load() 
+messages.printSchema()
+messages_as_strings=messages.selectExpr("CAST(key AS STRING)", "CAST(value AS STRING)")
+messages_as_strings.show()
+messages_as_strings.printSchema()
+messages_as_strings.count()
+messages_as_strings.select('value').take(1)
+first_message=json.loads(messages_as_strings.select('value').take(1)[0].value)
+import json
+first_message=json.loads(messages_as_strings.select('value').take(1)[0].value)
+print(first_message['sequences']['questions'][0])
+print(first_message['sequences']['questions'][0]['options'])
+print(first_message['sequences']['questions'][0]['options'][0]['id'])
+exit()

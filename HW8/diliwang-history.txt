@@ -1,0 +1,18 @@
+    1  cd w205
+    2  ls
+    3  cd assignment-08-dwang-ischool
+    4  cp ~/w205/course-content//08-Querying-Data/docker-compose.yml .
+    5  cat docker-compose.yml
+    6  docker-compose up -d
+    7  docker-compose ps
+    8  docker-compose logs -f kafka
+    9  docker-compose exec cloudera hadoop fs -ls /tmp/
+   10  docker-compose exec kafka   kafka-topics     --create     --topic assessments     --partitions 1     --replication-factor 1     --if-not-exists     --zookeeper zookeeper:32181
+   11  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+   12  docker-compose exec mids bash -c "cat /w205/assignment-08-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+   13  docker-compose exec spark pyspark
+   14  spark cat /root/.python_history
+   15  docker-compose exec spark cat /root/.python_history
+   16  docker-compose exec spark cat /root/.python_history > pyspark_history.txt
+   17  docker-compose down
+   18  history > diliwang-history.txt

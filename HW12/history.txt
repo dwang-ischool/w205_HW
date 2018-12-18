@@ -1,0 +1,1000 @@
+  277  cd yHCVIHoD
+  278  cd -/w205
+  279  cd ~/w205
+  280  ls
+  281  cd redis-cluster
+  282  ls
+  283  docker-compose ps
+  284  docker-compose down
+  285  ls
+  286  cd
+  287  kjkjk
+  288  kjj
+  289  bq query --use_legacy_sql=false 'SELECT
+  290    EXTRACT(HOUR FROM start_date) as start_hour, 
+  291    subscriber_type, 
+  292    count(*) as trips
+  293  FROM `bigquery-public-data.san_francisco.bikeshare_trips`
+  294  GROUP BY start_hour, subscriber_type
+  295  ORDER BY start_hour'
+  296  ls
+  297  history > science@w205s4-martin-13-history.txt
+  298  exit
+  299  docker run redis
+  300  docker run -d redis
+  301  docker ps
+  302  docker ps -a
+  303  docker stop k
+  304  docker stop inspiring_hoover 
+  305  docker rm -f kind_jang 
+  306  docker rm -f inspiring_hoover 
+  307  docker ps -a
+  308  cd ~/w205/course-content
+  309  git pull --all
+  310  mkdir ~/w205/assignment-05-dwang-ischool/redis-standalone
+  311  cd ~/w205/assignment-05-dwang-ischool/redis-standalone
+  312  cp ../../course-content/05-Storing-Data-II/example-0-docker-compose.yml docker-compose.yml
+  313  cat docker-compose.yml
+  314  docker-compose up -d
+  315  cat docker-compose.yml
+  316  docker-compose ps
+  317  docker-compose up -d
+  318  docker -compose down
+  319  docker-compose down
+  320  docker-compose ps
+  321  docker-compose up -d
+  322  docker-compose ps
+  323  docker-compose logs redis
+  324  ipython
+  325  docker-compose ps
+  326  docker-compose down
+  327  docker-compose ps
+  328  cat docker-compose.yml
+  329  docker-compose up -d
+  330  docker-compose ps
+  331  docker-compose logs redis
+  332  docker-compose exec mids bash
+  333  docker compose-ps
+  334  docker-compose ps
+  335  docker-compose down
+  336  docker-compose ps
+  337  history> diliwang-history.txt
+  338  rm diliwang-history.txt
+  339  cd ..
+  340  history> diliwang-history.txt
+  341  exit
+  342  ls
+  343  cd w205
+  344  git clone https://github.com/mids-w205-martin-mims/assignment-04-dwang-ischool.git
+  345  ls
+  346  cd assignment-04-dwang-ischool
+  347  ls
+  348  ipython 04-assignment-example.ipynb
+  349  ipython notebook 04-assignment-example.ipynb
+  350  cd
+  351  bq query --use_legacy_sql=false '\
+  352  SELECT start_station_name, end_station_name, \
+  353    sum(trips) as total_trips, \
+  354    sum(case when subscriber_type = "Subscriber" then trips else 0 end) as subscriber_trips, \
+  355    sum(case when subscriber_type = "Customer" then trips else 0 end) as customer_trips\
+  356  FROM `constant-setup-216321.query_results.group_by_stations_and_subscribertype`\
+  357  GROUP BY start_station_name, end_station_name\
+  358  ORDER BY total_trips desc\
+  359  LIMIT 20' > top20routes.csv
+  360  bq query --use_legacy_sql=false 'SELECT start_station_name, end_station_name, 
+  361    sum(trips) as total_trips, 
+  362    sum(case when subscriber_type = "Subscriber" then trips else 0 end) as subscriber_trips, 
+  363    sum(case when subscriber_type = "Customer" then trips else 0 end) as customer_trips
+  364   FROM `constant-setup-216321.query_results.group_by_stations_and_subscribertype`
+  365   GROUP BY start_station_name, end_station_name
+  366   ORDER BY total_trips desc
+  367   LIMIT 5'
+  368  bq query --use_legacy_sql=false 'SELECT start_station_name, end_station_name, 
+  369    sum(trips) as total_trips, 
+  370    sum(case when subscriber_type = "Subscriber" then trips else 0 end) as subscriber_trips, 
+  371    sum(case when subscriber_type = "Customer" then trips else 0 end) as customer_trips
+  372   FROM `constant-setup-216321.query_results.group_by_stations_and_subscribertype`
+  373   GROUP BY start_station_name, end_station_name
+  374   ORDER BY total_trips desc
+  375   LIMIT 20'
+  376  ls
+  377  cd w205
+  378  ls
+  379  cd
+  380  bq query --use_legacy_sql=false '
+  381  SELECT start_station_id, start_station_name, end_station_id, end_station_name, 
+  382    sum(trips) as total_trips, 
+  383    sum(case when subscriber_type = "Subscriber" then trips else 0 end) as subscriber_trips, 
+  384    sum(case when subscriber_type = "Customer" then trips else 0 end) as customer_trips
+  385   FROM (
+  386   SELECT 
+  387    start_station_id, start_station_name, end_station_id, end_station_name, subscriber_type, 
+  388    count(*) as trips,
+  389    round(avg(duration_sec/60),2) as avg_duration_min
+  390  FROM `bigquery-public-data.san_francisco.bikeshare_trips` 
+  391  GROUP BY start_station_id, start_station_name, end_station_id, end_station_name, subscriber_type
+  392   )
+  393   GROUP BY start_station_id, start_station_name, end_station_id, end_station_name
+  394   ORDER BY total_trips desc
+  395   LIMIT 20'
+  396  cd w205
+  397  ls
+  398  cd assignment-04-dwang-ischool
+  399  ls
+  400  git status
+  401  git add .
+  402  git status
+  403  git commit -m "Dili Wang submitting assignment 4"
+  404  git push origin master
+  405  apt-get install git
+  406  cd course_content
+  407  ls
+  408  cd w205
+  409  ls
+  410  cd course-content
+  411  git remote add upstream git@github.com:mids-w205-fund-of-data-eng/course-content
+  412  git remote remove origin
+  413  git remote add origin https://github.com/mids-w205-martin-mims/assignment-01-dwang-ischool
+  414  git remote -v
+  415  mkdir Test_Folder
+  416  git status
+  417  cd Test Folder
+  418  cd Test_Folder
+  419  echo "creating a test file" -> test.txt
+  420  ls
+  421  cd..
+  422  cd .. 
+  423  ls
+  424  git status
+  425  git remote remove origin
+  426  git remote -v
+  427  git remote remove upstream
+  428  git remote -v
+  429  cd
+  430  git status
+  431  cd course-content
+  432  cd w205
+  433  ls
+  434  cd course-content
+  435  ls
+  436  cd Test_Folder
+  437  rm test.txt
+  438  cd ..
+  439  rmdir Test_Folder
+  440  ls
+  441  git status
+  442  git remote add upstream https://github.com/mids-w205-martin-mims/course-content.git
+  443  git remote -v
+  444  git pull upstream master
+  445  cd ..
+  446  git clone https://github.com/mids-w205-martin-mims/assignment-01-dwang-ischool.git
+  447  git remote -v
+  448  ls
+  449  cd assignments-01-dwang-ischool
+  450  cd assignment-01-dwang-ischool
+  451  ls
+  452  git remote -v
+  453  touch test.md
+  454  ls
+  455  git status
+  456  git add test.md
+  457  git commit -m "Attempting a push to github repository"
+  458  git status
+  459  git commit -m "Testing a push to github repository"
+  460  git config --global user.email "dwang.ischool@berkeley.edu"
+  461  git config --global user.name "dwang-ischool"
+  462  git commit -m "Testing a push to github repository"
+  463  git remote -v
+  464  git push origin master
+  465  git fetch origin master
+  466  git status
+  467  git fetch origin
+  468  ls
+  469  git merge origin/master
+  470  mdir w205
+  471  sudo apt install mtools
+  472  mkdir w205
+  473  cd w205
+  474  git clone https://github.com/mids-w205-martin-mims/
+  475  ls
+  476  git clone https://github.com/mids-w205-martin-mims/
+  477  git clone https://github.com/mids-w205-martin-mims.git
+  478  cd w205
+  479  git clone https://github.com/mids-w205-martin-mims/course-content.git
+  480  history> newsessionhistory.txt
+  481  ls
+  482  cd w205
+  483  ls
+  484  cd assignment-05-dwang-ischool
+  485  ls
+  486  git add .
+  487  git status
+  488  git commit -m "Dili submitting hw update"
+  489  git push origin master
+  490  exit
+  491  cd ~/w205/course-content
+  492  cd ..
+  493  cd kafka
+  494  cd ~/w205/course-content
+  495  cd kafka
+  496  git pull -all
+  497  git pull --all
+  498  cd w205
+  499  cd ..
+  500  mkdir kafka
+  501  ~/w205/course-content
+  502  cd ~/w205/course-content
+  503  ls
+  504  cd ..
+  505  cd kafka
+  506  cp ~/w205/course-content/06-Transforming-Data/docker-compose.yml
+  507  cp ~/w205/course-content/06-Transforming-Data/docker-compose.yml docker-compose.yml
+  508  docker-compose up -d
+  509  docker-compose ps
+  510  docker-compose logs zookeeper | grep -i binding
+  511  docker-compose logs kafka | grep -i started
+  512  docker-compose exec kafka   kafka-topics     --create     --topic foo     --partitions 1     --replication-factor 1     --if-not-exists     --zookeeper zookeeper:32181
+  513  docker-compose exec kafka   kafka-topics     --describe     --topic foo     --zookeeper zookeeper:32181
+  514  docker-compose exec kafka   bash -c "seq 42 | kafka-console-producer \
+  515      --request-required-acks 1 \
+  516      --broker-list localhost:29092 \
+  517      --topic foo && echo 'Produced 42 messages.'"
+  518  docker-compose ps
+  519  cd
+  520  exit
+  521  ls
+  522  cd w205
+  523  ls
+  524  docker run redis
+  525  docker run -d redis
+  526  docker ps
+  527  docker rm -f kafka_mids_1 
+  528  docker rm -f kafka_zookeeper_1 
+  529  docker rm -f kafka_kafka_1 
+  530  docker rm -f gracious_fermi 
+  531  docker ps -a
+  532  docker rm -f jovial_minsky 
+  533  docker ps -a
+  534  cd ~/w205/course-content
+  535  git pull --all
+  536  mkdir ~/w205/assignment-05-dwang-ischool/redis-standalone
+  537  cd ~/w205/assignment-05-dwang-ischool/redis-standalone
+  538  cp ../../course-content/05-Storing-Data-II/example-0-docker-compose.yml docker-compose.yml
+  539  cat docker-compose.yml
+  540  docker-compose up -d
+  541  docker-compose ps
+  542  docker-compose logs redis
+  543  ipython
+  544  docker-compose down
+  545  docker-compose ps
+  546  cat docker-compose.yml
+  547  docker-compose up -d
+  548  docker-compose ps
+  549  docker-compose logs redis
+  550  docker-compose exec mids bash
+  551  docker-compose ps
+  552  docker-compose down
+  553  docker-compose ps
+  554  cat docker-compose.yml
+  555  docker-compose up -d
+  556  docker-compose exec mids jupyter notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root
+  557  docker-compose down
+  558  docker-compose ps
+  559  cat docker-compose.yml
+  560  docker-compose up -d
+  561  docker-compose ps
+  562  docker-compose logs mids
+  563  docker-compose down
+  564  curl -L -o trips.csv https://goo.gl/QvHLKe
+  565  cat docker-compose.yml
+  566  docker-compose up -d
+  567  docker-compose logs mids
+  568  docker-compose down
+  569  history> diliwang-history.txt
+  570  rm diliwang-history.txt
+  571  cd ..
+  572  history> diliwang-history.txt
+  573  ls
+  574  git status
+  575  git add .
+  576  git status
+  577  git commit -m "Dili submitting HW 5"
+  578  git push origin master
+  579  exit
+  580  mkdir ~/w205/spark-with-kafka
+  581  cd ~/w205/spark-with-kafka
+  582  cp ../course-content/07-Sourcing-Data/docker-compose.yml .
+  583  ls
+  584  cat docker-compose.yml
+  585  docker-compose up -d
+  586  docker-compose logs -f kafka
+  587  docker-compose exec kafka   kafka-topics     --create     --topic foo     --partitions 1     --replication-factor 1     --if-not-exists     --zookeeper zookeeper:32181
+  588  docker-compose exec kafka kafka-topics --describe --topic foo --zookeeper zookeeper:32181
+  589  docker-compose exec kafka   bash -c "seq 42 | kafka-console-producer \
+  590      --request-required-acks 1 \
+  591      --broker-list kafka:29092 \
+  592      --topic foo && echo 'Produced 42 messages.'"
+  593  docker-compose exec spark pyspark
+  594  docker-compose down
+  595  docker-compose ps
+  596  docker-compose up -d
+  597  curl -L -o github-example-large.json https://goo.gl/Y4MD58
+  598  docker-compose up -d
+  599  docker-compose logs -f kafka
+  600  ocker-compose exec kafka   kafka-topics     --create   --topic foo   --partitions 1   --replication-factor 1   --if-not-exists   --zookeeper zookeeper:32181
+  601  docker-compose exec kafka   kafka-topics     --create   --topic foo   --partitions 1   --replication-factor 1   --if-not-exists   --zookeeper zookeeper:32181
+  602  docker-compose exec kafka kafka-topics --describe --topic foo --zookeeper zookeeper:32181
+  603  docker-compose exec mids bash -c "cat /w205/github-example-large.json"
+  604  docker-compose exec mids bash -c "cat /w205/github-example-large.json | jq '.'"
+  605  docker-compose exec mids bash -c "cat /w205/github-example-large.json"
+  606  docker-compose exec mids bash -c "cat /w205/spark-with-kafka/github-example-large.json"
+  607  docker-compose exec mids bash -c "cat /w205/spark-with-kafka/github-example-large.json" | jq '.'"
+  608  docker-compose exec mids bash -c "cat /w205/spark-with-kafka/github-example-large.json | jq '.'"
+  609  docker-compose exec mids bash -c "cat /w205/github-example-large.json | jq '.[]' -c"
+  610  docker-compose exec mids bash -c "cat /w205/spark-with-kafka/github-example-large.json | jq '.[]' -c"
+  611  docker-compose exec mids   bash -c "cat /w205/spark-with-kafka/github-example-large.json \
+  612      | jq '.[]' -c \
+  613      | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  614  docker-compose exec spark pyspark
+  615  docker-compose down
+  616  docker-compose ps
+  617  exit
+  618  cd 
+  619  cd w205
+  620  ls
+  621  git clone https://github.com/mids-w205-martin-mims/assignment-06-dwang-ischool
+  622  ls
+  623  cd assignment-06-dwang-ischool
+  624  cp ~/w205/kafka/docker-compose.yml .
+  625  ls
+  626  cat docker-compose.yml
+  627  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  628  docker-compose up -d
+  629  docker-compose logs -f kafka
+  630  docker-compose ps
+  631  docker-compose exec kafka kafka-topics --describe --topic foo --zookeeper zookeeper:32181
+  632  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  633  docker-compose exec kafka kafka-topics --describe --topic foo --zookeeper zookeeper:32181
+  634  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json"
+  635  docker-compose exec mids bash -c "cat /w205/assignment-06-dwang-ischool/assessment-attempts-20180128-121051-nested.json"
+  636  docker-compose exec mids bash -c "cat /w205/assignment-06-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.'"
+  637  docker-compose exec mids bash -c "cat /w205/assignment-06-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c"
+  638  docker-compose exec mids bash -c "cat /w205/assignment-06-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  639  docker-compose exec kafka kafka-console-consumer --bootstrap-server kafka:29092 --topic foo --from-beginning --max-messages 42
+  640  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e"
+  641  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e" | wc -l
+  642  history > dili-wang-history.txt
+  643  docker-compose down
+  644  history > dili-wang-history.txt
+  645  exit
+  646  cd w205
+  647  ls
+  648  cd assignment-06-ischool
+  649  ls
+  650  cd assignment-06-dwang-ischool
+  651  ls
+  652  echo dili-wang-annotations.md
+  653  echo My Annotations, Assignment 6 dili-wang-annotations.md
+  654  cd w205
+  655  ls
+  656  cd assignment-06-dwang-ischool
+  657  ls
+  658  docker-compose up -d
+  659  docker-compose ps
+  660  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  661  docker-compose exec mids bash -c "cat /w205/assignment-06-dwang-ischool/assessment-attempts-20180128-121051-nested.json"
+  662  docker-compose exec mids bash -c "cat /w205/assignment-06-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.'"
+  663  docker-compose exec mids bash -c "cat /w205/assignment-06-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  664  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e"
+  665  24  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e" | wc -l
+  666  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e" | wc -l
+  667  docker-compose exec mids bash -c "cat /w205/assignment-06-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  668  docker-compose exec mids bash -c "kafkacat -C -b kafka:2 
+  669  9092 -t foo -o beginning -e" | wc -l 
+  670  docker-compose exec mids bash -c "kafkacat -C -b kafka:2 
+  671  9092 -t foo -o beginning -e" | wc -l 
+  672  docker-compose exec mids bash -c "kafkacat -C -b kafka:2 
+  673  9092 -t foo -o beginning -e" 
+  674  docker-compose exec mids bash -c "kafkacat -C -b kafka:2 
+  675  9092 -t foo -o beginning -e"
+  676  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e"
+  677  ocker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e" | wc -l
+  678  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e" | wc -l
+  679  docker-compose exec kafka kafka-console-consumer --bootstrap-server kafka:29092 --topic foo --from-beginning --max-messages 42
+  680  docker-compose exec mids bash -c "cat /w205/kafka/github-example-large.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  681  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e"
+  682  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e" | wc -l
+  683  docker-compose exec mids bash -c "cat /w205/kafka/github-example-large.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  684  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e" | wc -l
+  685  docker-compose exec kafka   kafka-console-consumer     --bootstrap-server kafka:29092     --topic foo     --from-beginning     --max-messages 42
+  686  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e" | wc -l
+  687  git status
+  688  git add dili-wang-annotations.md
+  689  git add dili-wang-history.txt
+  690  git add docker-compose.yml
+  691  git status
+  692  git commit -m "Dili Wang submitting Assignment 6"
+  693  git push origin master
+  694  exit
+  695  git clone https://github.com/mids-w205-martin-mims/assignment-07-dwang-ischool.git
+  696  ls
+  697  cd w205
+  698  git clone https://github.com/mids-w205-martin-mims/assignment-07-dwang-ischool.git
+  699  ls
+  700  cd assignment-07-dwang-ischool
+  701  cp ../course-content/07-Sourcing-Data/docker-compose.yml .
+  702  cat docker-compose.yml
+  703  docker-compose up -d
+  704  docker-compose logs -f kafka
+  705  docker-compose exec kafka   kafka-topics     --create     --topic foo     --partitions 1     --replication-factor 1     --if-not-exists cp ../course-content/07-Sourcing-Data/docker-compose.yml .
+  706  docker-compose exec kafka   kafka-topics     --create     --topic test     --partitions 1     --replication-factor 1     --if-not-exists cp ../course-content/07-Sourcing-Data/docker-compose.yml .
+  707  docker-compose exec kafka kafka-topics --create --topic test --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  708  ocker-compose exec kafka kafka-topics --describe --topic test --zookeeper zookeeper:32181
+  709  docker-compose exec kafka kafka-topics --describe --topic test --zookeeper zookeeper:32181
+  710  docker-compose exec kafka bash -c "seq 42 | kafka-console-producer --request-required-acks 1 --broker-list kafka:29092 --topic test && echo 'Produced 42 messages.'"
+  711  docker-compose exec spark pyspark
+  712  docker-compose down
+  713  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  714  docker-compose up -d
+  715  docker-compose logs -f kafka
+  716  docker-compose exec kafka kafka-topics --create --topic AssessmentData --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  717  docker-compose exec kafka kafka-topics --describe --topic AssessmentData --zookeeper zookeeper:32181
+  718  docker-compose exec mids bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json
+  719  "
+  720  docker-compose exec mids bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq'.'"
+  721  docker-compose exec mids bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.'"
+  722  docker-compose exec mids bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c"
+  723  docker-compose exec mids  bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json\
+  724   | jq '.[]' -c\
+  725   | kafkacat -P -b kafka:29092 -t AssessmentData && echo 'Produced 100 messages.'"
+  726  docker-compose exec spark pyspark
+  727  docker-compose down
+  728  history > diliwang-history.txt
+  729  cd ..
+  730  ls
+  731  cd spark-with-kafka
+  732  docker-compose up -d
+  733  docker-compose exec mids   bash -c "cat /w205/spark-with-kafka/github-example-large.json \
+  734    | jq '.[]' -c \
+  735    | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  736  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  737  docker-compose exec kafka kafka-topics --create --topic foobar --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  738  docker-compose exec kafka kafka-topics --describe --topic foobar --zookeeper zookeeper:32181
+  739  docker-compose exec mids   bash -c "cat /w205/spark-with-kafka/github-example-large.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  740  docker-compose exec spark pyspark
+  741  docker-compose exec mids   bash -c "cat /w205/spark-with-kafka/github-example-large.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foobar && echo 'Produced 100 messages.'"
+  742  docker-compose exec spark pyspark
+  743  docker-compose exec mids   bash -c "cat /w205/spark-with-kafka/github-example-large.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foobar && echo 'Produced 200 messages.'"
+  744  docker-compose exec spark pyspark
+  745  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  746  docker-compose exec kafka kafka-topics --create --topic assessment --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  747  docker-compose exec mids   bash -c "cat /w205/spark-with-kafka/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessment foo && echo 'Produced 150 messages.'"
+  748  docker-compose exec mids   bash -c "cat /w205/spark-with-kafka/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessment && echo 'Produced 150 messages.'"
+  749  docker-compose exec spark pyspark
+  750  docker-compose down
+  751  cd ..
+  752  exit
+  753  cd w205
+  754  exit
+  755  ls
+  756  cd w205
+  757  ls
+  758  cd spark-with-kafka-and-hdfs
+  759  docker-compose exec cloudera hadoop fs -ls /tmp/
+  760  exit
+  761  ls
+  762  cd w205
+  763  ls
+  764  cd assignment-07-dwang-ischool
+  765  ls
+  766  cp ../course-content/07-Sourcing-Data/docker-compose.yml .
+  767  ls
+  768  cat docker-compose.yml
+  769  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  770  docker-compose up -d
+  771  docker-compose logs -f kafka
+  772  docker-compose ps
+  773  docker-compose exec kafka kafka-topics --create --topic AssessmentData --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  774  docker-compose exec kafka kafka-topics --describe --topic AssessmentData --zookeeper zookeeper:32181
+  775  docker-compose exec mids bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json
+  776  "
+  777  docker-compose exec mids bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq'.'"
+  778  docker-compose exec mids bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.'"
+  779  docker-compose exec mids bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c"
+  780  docker-compose exec spark pyspark
+  781  docker-compose exec spark cat /root/.python_history
+  782  docker-compose exec spark cat /root/.python_history | echo "spark_history.txt"
+  783  docker-compose exec spark cat /root/.python_history > spark_history.txt
+  784  docker-compose down
+  785  history > diliwang-history.txt
+  786  cp ../course-content/07-Sourcing-Data/docker-compose.yml .
+  787  cat docker-compose.yml
+  788  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  789  docker-compose up -d
+  790  docker-compose logs -f kafka
+  791  12 docker-compose ps
+  792  docker-compose ps
+  793  docker-compose exec kafka kafka-topics --create --topic AssessmentData --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  794  docker-compose exec kafka kafka-topics --describe --topic AssessmentData --zookeeper zookeeper:32181
+  795  docker-compose exec mids bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json"
+  796  docker-compose exec mids bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.'"
+  797  docker-compose exec mids bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c"
+  798  docker-compose exec mids  bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json\
+  799   | jq '.[]' -c\
+  800   | kafkacat -P -b kafka:29092 -t AssessmentData && echo 'Published Messages.'"
+  801  history > diliwang-history.txt
+  802  docker-compose exec spark pyspark
+  803  docker-compose exec spark cat /root/.python_history
+  804  docker-compose exec spark cat /root/.python_history > pyspark_history.txt
+  805  docker-compose down
+  806  history > diliwang-history.txt
+  807  git status
+  808  git add diliwang-annotations.md
+  809  git add diliwang-history.txt
+  810  git add docker-compose.yml
+  811  git add pyspark_history.txt
+  812  git status
+  813  git commit -m "dili submitting assignment 7"
+  814  git push origin master
+  815  git status
+  816  git add diliwang-annotations.md
+  817  git commit -m "Dili fixing typo, final submission"
+  818  git push origin master
+  819  exit
+  820  cd w205
+  821  mkdir ~/w205/spark-with-kafka-and-hdfs
+  822  cp ~/w205/course-content//08-Querying-Data/docker-compose.yml .
+  823  cat docker-compose.yml
+  824  docker-compose up -d
+  825  docker-compose exec cloudera hadoop fs -ls /tmp/
+  826  docker-compose exec kafka kafka-topics --create --topic players --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  827  docker-compose down
+  828  ls
+  829  cat docker-compose.ym
+  830  cat docker-compose.yml
+  831  ls
+  832  cd spark-with-kafka-and-hdfs
+  833  ls
+  834  cp ~/w205/course-content//08-Querying-Data/docker-compose.yml .
+  835  docker-compose up -d
+  836  docker-compose exec cloudera hadoop fs -ls /tmp/
+  837  docker-compose exec kafka kafka-topics --create --topic players --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  838  curl -L -o players.json https://goo.gl/vsuCpZ
+  839  docker-compose exec mids bash -c "cat /w205/spark-with-kafka-and-hdfs/players.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t players"
+  840  docker-compose exec spark pyspark
+  841  curl -L -o github-example-large.json https://goo.gl/Y4MD58
+  842  docker-compose exec mids bash -c "cat /w205/spark-with-kafka-and-hdfs/github-example-large.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t commits"
+  843  docker-compose exec spark pyspark
+  844  docker-compose exec spark cat /root/.python_history
+  845  exit
+  846  cd assignment-08-dwang-ischool
+  847  cp ~/w205/course-content//08-Querying-Data/docker-compose.yml .
+  848  cat docker-compose.yml
+  849  docker-compose up-d
+  850  docker-compose up -d
+  851  docker-compose logs -f kafka
+  852  docker-compose exec cloudera hadoop fs -ls /tmp/
+  853  docker-compose exec kafka kafka-topics --create --topic
+  854  docker-compose exec cloudera hadoop fs -ls /tmp/
+  855  docker-compose exec kafka kafka-topics --create --topic assessmentdata --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  856  docker-compose ps
+  857  docker-compose exec kafka kafka-topics --create --topic assessmentdata --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  858  cat docker-compose.yml
+  859  docker-compose exec kafka kafka-topics --create --topic players --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  860  docker-comopse down
+  861  docker-compose down
+  862  cd ..
+  863  ls
+  864  cd spark-with-kafka-and-hdfs
+  865  ls
+  866  docker-compose up -d
+  867  docker-compose exec kafka kafka-topics --create --topic players --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  868  docker-compose exec kafka   kafka-topics     --create     --topic players2
+  869  docker-compose exec kafka   kafka-topics     --create     --topic players2     --partitions 1     --replication-factor 1     --if-not-exists     --zookeeper zookeeper:32181
+  870  docker-compose down
+  871  cd..
+  872  cd ..
+  873  ls
+  874  cd assignment-08-dwang-ischool
+  875  ls
+  876  docker-compose.yml
+  877  docker-compose up -d
+  878  docker-compose exec kafka   kafka-topics     --create     --topic assessmentdata     --partitions 1     --replication-factor 1     --if-not-exists     --zookeeper zookeeper:32181
+  879  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  880  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessmentdata"
+  881  docker-compose exec mids bash -c "cat /w205/assignment-08-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessmentdata"
+  882  docker-compose exec spark pyspark
+  883  docker-compose exec spark cat /root/.python_history > pyspark_history.txt
+  884  docker-compose down
+  885  history > diliwang-history.txt
+  886  exit
+  887  cd w205
+  888  ls
+  889  cd assignment-08-dwang-ischool
+  890  cp ~/w205/course-content//08-Querying-Data/docker-compose.yml .
+  891  cat docker-compose.yml
+  892  docker-compose up -d
+  893  docker-compose ps
+  894  docker-compose logs -f kafka
+  895  docker-compose exec cloudera hadoop fs -ls /tmp/
+  896  docker-compose exec kafka   kafka-topics     --create     --topic assessments     --partitions 1     --replication-factor 1     --if-not-exists     --zookeeper zookeeper:32181
+  897  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  898  docker-compose exec mids bash -c "cat /w205/assignment-08-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t assessments"
+  899  docker-compose exec spark pyspark
+  900  spark cat /root/.python_history
+  901  docker-compose exec spark cat /root/.python_history
+  902  docker-compose exec spark cat /root/.python_history > pyspark_history.txt
+  903  docker-compose down
+  904  history > diliwang-history.txt
+  905  git status
+  906  git add .ipynb_checkpoints/
+  907  git add annotations-diliwang.ipynb
+  908  git add diliwang-history.txt
+  909  git add diliwang-history2.txt
+  910  docker-compose.yml
+  911  git add docker-compose.yml
+  912  git add pyspark_history.txt
+  913  git status
+  914  git commit -m "Dili submitting homework 8"
+  915  git push origin master
+  916  exit
+  917  cd w205
+  918  ls
+  919  cd assignment-08-dwang-ischool
+  920  ls
+  921  docker-compose ps
+  922  docker-compose exec cloudera hadoop fs -ls /tmp/
+  923  docker-compose exec cloudera hadoop fs -ls /tmp/some_assessments_data/
+  924  docker-compose exec cloudera hadoop fs -ls /tmp/
+  925  docker-compose exec cloudera hadoop fs -ls /tmp/extracted_assessments
+  926  history > diliwang-history2.txt
+  927  exit
+  928  docker-compose exec mids curl http://localhost:5000/
+  929  cd w205/flask-with-kafka/
+  930  docker-compose exec mids curl http://localhost:5000/
+  931  docker-compose exec mids curl http://localhost:5000/purchase_a_sword
+  932  docker-compose exec mids curl http://localhost:5000/
+  933  docker-compose exec mids curl http://localhost:5000/purchase_a_sword
+  934  docker-compose exec mids curl http://localhost:5000/
+  935  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t events -o beginning -e"
+  936  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t events -o beginning"
+  937  cd w205
+  938  cd flask-with-kafka/
+  939  docker-compose exec mids curl http://localhost:5000/purchase_a_sword
+  940  docker-compose exec mids curl http://localhost:5000/
+  941  exit
+  942  cd w205
+  943  mkdir flask-with-kafka
+  944  cd flask-with-kafka
+  945  cp ~/w205/course-content/09-Ingesting-Data/*.py .
+  946  ls
+  947  cd ..
+  948  ls
+  949  cd course-content
+  950  ls
+  951  cd..
+  952  cd ..
+  953  cd ~/w205/course-content/09-Ingesting-Data/
+  954  cd..
+  955  cd ..
+  956  cd w205
+  957  ls
+  958  cd flask-with-kafka
+  959  ls
+  960  cp w205/course-content/09-Ingesting-Data/*.py .
+  961  cd w205/course-content/09-Ingesting-Data/
+  962  w205/course-content/09-Ingesting-Data
+  963  cd 
+  964  cd w205/course-content/09-Ingesting-Data
+  965  ls
+  966  cd ..
+  967  git pull
+  968  git pull origin msaer
+  969  git pull origin master
+  970  git pull .
+  971  git status
+  972  git pull --all
+  973  cd 09-Ingesting-Data/
+  974  ls
+  975  cd ..
+  976  cd flask-with-kafka/
+  977  ls
+  978  cp ~/w205/course-content/09-Ingesting-Data/docker-compose.yml .
+  979  cp ~/w205/course-content/09-Ingesting-Data/*.py .
+  980  cd ..
+  981  cd course-content/
+  982  git pull --all
+  983  git pull origin master
+  984  git remote -v
+  985  git pull upstream master
+  986  cd 09-Ingesting-Data/
+  987  ls
+  988  cd ..
+  989  cd flask-with-kafka/
+  990  ls
+  991  rm docker-compose.yml
+  992  ls
+  993  cp ~/w205/course-content/09-Ingesting-Data/docker-compose.yml .
+  994  cp ~/w205/course-content/09-Ingesting-Data/*.py .
+  995  docker-compose up -d
+  996  ls
+  997  cat basic_game_api.py
+  998  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/basic_game_api.py flask run
+  999  ls
+ 1000  cat game_api.py
+ 1001  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/game_api.py flask run
+ 1002  docker-compose down
+ 1003  history --> example.txt
+ 1004  ls
+ 1005  cat example.txt
+ 1006  exit
+ 1007  mkdir ~/w205/flask-with-kafka-and-spark/
+ 1008  cd ~/w205/flask-with-kafka-and-spark/
+ 1009  cp ~/w205/course-content/10-Transforming-Streaming-Data/docker-compose.yml .
+ 1010  cp ~/w205/course-content/10-Transforming-Streaming-Data*.py .
+ 1011  cp ~/w205/course-content/10-Transforming-Streaming-Data/*.py .
+ 1012  ls
+ 1013  docker-compose up -d
+ 1014  docker-compose exec kafka kafka-topics --create --topic events --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+ 1015  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka-and-spark/game_api_with_json_events.py flask run --host 0.0.0.0
+ 1016  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka-and-spark/game_api_with_extended_json_events.py flask run --host 0.0.0.0
+ 1017  exit
+ 1018  docker-compose exec mids curl http://localhost:5000/
+ 1019  cd w205
+ 1020  ls
+ 1021  cd flask-with-kafka-and-spark/
+ 1022  docker-compose exec mids curl http://localhost:5000/
+ 1023  docker-compose exec mids curl http://localhost:5000/purchase_a_sword
+ 1024  docker-compose exec mids kafkacat -C -b kafka:29092 -t events -o beginning -e
+ 1025  ls
+ 1026  cat game_api_with_extended_json_events.py 
+ 1027  docker-compose exec mids curl http://localhost:5000/purchase_a_frog
+ 1028  docker-compose exec mids kafkacat -C -b kafka:29092 -t events -o beginning -e
+ 1029  ls
+ 1030  cat game_api_with_extended_json_events.py
+ 1031  cat game_api_with_json_events.py
+ 1032  docker-compose exec mids kafkacat -C -b kafka:29092 -t events -o beginning -e
+ 1033  docker ps
+ 1034  docker compose down
+ 1035  docker-compose down
+ 1036  docker ps
+ 1037  docker stop assignment06dwangischool_mids_1 
+ 1038  docker stop assignment06dwangischool_zookeeper_1 
+ 1039  docker compose
+ 1040  docker ps
+ 1041  exit
+ 1042  cd w205
+ 1043  ls
+ 1044  cd flask-with-kafka-and-spark 
+ 1045  docker-compose exec mids kafkacat -C -b kafka:29092 -t events -o beginning -e
+ 1046  docker-compose exec mids kafkacat -C -b kafka:29092 -t events -o beginning
+ 1047  exit
+ 1048  cd w205
+ 1049  cd assignment-09-dwang-ischool/
+ 1050  docker-compose exec mids curl http://localhost:5000/
+ 1051  docker-compose exec mids curl http://localhost:5000/purchase_a_sword
+ 1052  docker-compose exec mids curl http://localhost:5000/
+ 1053  docker-compose exec mids curl http://localhost:5000/purchase_a_sword
+ 1054  docker-compose exec mids curl http://localhost:5000/
+ 1055  docker-compose exec mids curl http://localhost:5000/purchase_a_sword
+ 1056  docker-compose exec mids curl http://localhost:5000/
+ 1057  docker-compose exec mids curl http://localhost:5000/purchase_a_sword
+ 1058  docker-compose exec mids curl http://localhost:5000/
+ 1059  docker-compose exec mids curl http://localhost:5000/purchase_a_sword
+ 1060  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t events -o beginning -e"
+ 1061  history --> separate_window.txt
+ 1062  git status
+ 1063  git add .
+ 1064  git status
+ 1065  git commmit -m "Dili submitting HW 9"
+ 1066  git commit -m "Dili submitting HW 9"
+ 1067  git push origin master
+ 1068  exit
+ 1069  cd w205
+ 1070  ls
+ 1071  git clone https://github.com/mids-w205-martin-mims/assignment-09-dwang-ischool.git
+ 1072  cd assignment-09-dwang-ischool/
+ 1073  cp ~/w205/course-content/09-Ingesting-Data/docker-compose.yml .
+ 1074  cp ~/w205/course-content/09-Ingesting-Data/*.py .
+ 1075  cat docker-compose.yml
+ 1076  docker-compose up -d
+ 1077  docker-compose ps
+ 1078  docker-compose exec kafka kafka-topics --create --topic events --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+ 1079  cat basic_game_api.py
+ 1080  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/basic_game_api.py flask run
+ 1081  cat game_api.py
+ 1082  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/game_api.py flask run
+ 1083  docker-compose down
+ 1084  history --> original_window.txt
+ 1085  exit
+ 1086  cd assignment-11-dwang-ischool/
+ 1087  cp ~/w205/course-content/11-Storing-Data-III/docker-compose.yml .
+ 1088  cp ~/w205/course-content/11-Storing-Data-III/*.py .
+ 1089  docker-compose up -d
+ 1090  docker-compose logs -f cloudera
+ 1091  docker-compose exec kafka kafka-topics --create --topic events --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+ 1092  ls
+ 1093  ls game_api.py
+ 1094  cat game_api.py
+ 1095  docker-compose exec mids env FLASK_APP=/w205/assignment-11-dwang-ischool/game_api.py flask run --host 0.0.0.0
+ 1096  history > history2.txt
+ 1097  git status
+ 1098  history > history.txt
+ 1099  exit
+ 1100  cd w205/assignment-10-dwang-ischool/
+ 1101  docker-compose exec mids curl http://localhost:5000/
+ 1102  docker-compose exec mids curl http://localhost:5000/purchase_a_sword
+ 1103  docker-compose exec mids curl http://localhost:5000/purchase_a_frog
+ 1104  docker-compose exec mids curl http://localhost:5000/
+ 1105  docker-compose exec mids curl http://localhost:5000/purchase_a_frog
+ 1106  docker-compose exec mids kafkacat -C -b kafka:29092 -t events -o beginning -e
+ 1107  docker-compose exec mids curl http://localhost:5000/purchase_a_frog
+ 1108  docker-compose exec mids curl http://localhost:5000/
+ 1109  docker-compose exec mids curl http://localhost:5000/purchase_a_frog
+ 1110  docker-compose exec mids kafkacat -C -b kafka:29092 -t events -o beginning -e
+ 1111  docker-compose exec spark pyspark
+ 1112  history > secondarywindow.txt
+ 1113  git status
+ 1114  cd ..
+ 1115  cd assignment-11-dwang-ischool/
+ 1116  docker-compose exec mids curl http://localhost:5000/
+ 1117  docker-compose exec mids kafkacat -C -b kafka:29092 -t events -o beginning -e
+ 1118  cat extract.py
+ 1119  cat extract_events.py 
+ 1120  docker-compose exec spark spark-submit /w205/assignment-11-dwang-ischool/extract_events.py
+ 1121  docker-compose exec cloudera hadoop fs -ls /tmp/
+ 1122  docker-compose exec cloudera hadoop fs -ls /tmp/extracted_events/
+ 1123  docker-compose exec spark spark-submit filename.py
+ 1124  ls
+ 1125  cat separate_events.py
+ 1126  docker-compose exec spark spark-submit /w205/assignment-11-dwang-ischool/separate_events.py
+ 1127  docker-compose exec spark spark-submit /w205/assignment-11-dwang-ischool/transforming_events.py
+ 1128  docker-compose exec spark spark-submit /w205/assignment-11-dwang-ischool/transform_events.py
+ 1129  ~/.config/terminator/config:
+ 1130  scrollback_lines = 5000
+ 1131  history > history2.txt
+ 1132  exit
+ 1133  cd ~/w205/full-stack2
+ 1134  docker-compose exec mids kafkacat -C -b kafka:29092 -t events -o beginning
+ 1135  docker-compose exec mids ab -n 10 -H "Host: user1.comcast.com" http://localhost:5000/
+ 1136  docker-compose exec mids ab -n 10 -H "Host: user1.comcast.com" http://localhost:5000/purchase_a_sword
+ 1137  docker-compose exec spark spark-submit /w205/full-stack2/filtered_writes.py
+ 1138  docker-compose exec cloudera hadoop fs -ls /tmp/purchases/
+ 1139  docker-compose down
+ 1140  exit
+ 1141  cd ~/w205/full-stack2
+ 1142  mkdir ~/w205/full-stack2/
+ 1143  cd ~/w205/full-stack2
+ 1144  cp ~/w205/course-content/13-Understanding-Data/docker-compose.yml .
+ 1145  docker-compose pull
+ 1146  cp ~/w205/course-content/13-Understanding-Data/*.py .
+ 1147  docker-compose up -d
+ 1148  docker-compose exec mids   env FLASK_APP=/w205/full-stack2/game_api.py   flask run --host 0.0.0.0
+ 1149  docker-compose ps
+ 1150  exit
+ 1151  cd w205
+ 1152  ls
+ 1153  cd assignment-11-dwang-ischool
+ 1154  ls
+ 1155  cat docker-compose.yml
+ 1156  docker-compose ps
+ 1157  docker-compose logs -f cloudera
+ 1158  docker-compose exec cloudera hadoop fs -ls /tmp/
+ 1159  docker-compose exec spark spark-submit /w205/assignment-11-dwang-ischool/extract_events.py
+ 1160  docker-compose down
+ 1161  cd w205
+ 1162  cd assignment-11-dwang-ischool/
+ 1163  docker-compose exec mids curl http://localhost:5000/purchase_a_sword
+ 1164  docker-compose exec mids curl http://localhost:5000/
+ 1165  docker-compose exec mids curl http://localhost:5000/purchase_a_sword
+ 1166  docker-compose exec mids curl http://localhost:5000/
+ 1167  docker-compose exec mids curl http://localhost:5000/purchase_a_sword
+ 1168  docker-compose exec mids kafkacat -C -b kafka:29092 -t events -o beginning -e
+ 1169  cat extracted_events.py
+ 1170  cat extract_events.py
+ 1171  docker-compose exec spark spark-submit /w205/assignment-11-dwang-ischool/extract_events.py
+ 1172  docker-compose exec cloudera hadoop fs -ls /tmp/
+ 1173  docker-compose exec cloudera hadoop fs -ls /tmp/extracted_events/
+ 1174  docker-compose exec spark spark-submit /w205/assignment-11-dwang-ischool/transform_events.py
+ 1175  cat transform_events.py
+ 1176  docker-compose exec spark spark-submit /w205/assignment-11-dwang-ischool/extract_events.py
+ 1177  docker-compose exec spark spark-submit /w205/assignment-11-dwang-ischool/transform_events.py
+ 1178  docker-compose exec cloudera hadoop fs -ls /tmp/
+ 1179  cat separate_events.py
+ 1180  docker-compose exec spark spark-submit /w205/assignment-11-dwang-ischool/separate_events.py
+ 1181  docker-compose exec cloudera hadoop fs -ls /tmp/
+ 1182  docker-compose down
+ 1183  history > separate_window.txt
+ 1184  git status
+ 1185  git add .
+ 1186  git commit -m "dili submitting homework 11"
+ 1187  git push origin master
+ 1188  cd w205
+ 1189  cd assignment-11-dwang-ischool/
+ 1190  ls
+ 1191  cat docker-compose.yml
+ 1192  docker-compose ps
+ 1193  docker-compose up -d
+ 1194  docker-compose ps
+ 1195  docker-compose logs -f cloudera
+ 1196  docker-compose exec cloudera hadoop fs -ls /tmp/
+ 1197  cat game_api.py
+ 1198  docker-compose exec mids env FLASK_APP=/w205/assignment-10-dwang-ischool/game_api_with_extended_json_events.py flask run --host 0.0.0.0
+ 1199  docker-compose exec mids env FLASK_APP=/w205/assignment-11-dwang-ischool/game_api.py flask run --host 0.0.0.0
+ 1200  history > original_window.txt
+ 1201  clear
+ 1202  docker pull midsw205/hadoop
+ 1203  yHCVIHoD
+ 1204  ls
+ 1205  cd w205/assignment-12-dwang-ischool/
+ 1206  cat filtered_writes.py
+ 1207  docker-compose exec cloudera hadoop fs -ls /tmp/
+ 1208  write_hive_table.py
+ 1209  cat write_hive_table.py
+ 1210  docker-compose exec presto presto --server presto:8080 --catalog hive --schema default
+ 1211  exit
+ 1212  cd w205/assignment-12-dwang-ischool/
+ 1213  docker-compose exec mids   env FLASK_APP=/w205/ssignment-12-dwang-ischool/game_api.py   flask run --host 0.0.0.0
+ 1214  ls
+ 1215  docker-compose exec mids   env FLASK_APP=/w205/ssignment-12-dwang-ischool/game_api.py   flask run --host 0.0.0.0
+ 1216  docker-compose ps
+ 1217  cat game_api.py
+ 1218  docker-compose exec mids env FLASK_APP=/w205/assignment-12-dwang-ischool/game_api.py flask run --host 0.0.0.0
+ 1219  exit
+ 1220  cd w205/assignment-12-dwang-ischool/
+ 1221  docker-compose exec kafka kafka-topics --create --topic events --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+ 1222  docker-compose exec mids kafkacat -C -b kafka:29092 -t events -o beginning
+ 1223  exit
+ 1224  git pull in ~/w205/course-content
+ 1225  ls
+ 1226  cd w205
+ 1227  ls
+ 1228  cd course-content
+ 1229  git pull
+ 1230  git remote -v
+ 1231  git pull upstream maste
+ 1232  git pull upstream master
+ 1233  cd w205
+ 1234  cd ..
+ 1235  ls
+ 1236  git clone https://github.com/mids-w205-martin-mims/assignment-12-dwang-ischool
+ 1237  ls
+ 1238  cd assignment-12-dwang-ischool/
+ 1239  cp ~/w205/course-content/13-Understanding-Data/docker-compose.yml .
+ 1240  docker-compose pull
+ 1241  cp ~/w205/course-content/13-Understanding-Data/*.py .
+ 1242  cat docker-compose.yml
+ 1243  docker ps
+ 1244  docker-compose ps
+ 1245  docker-compose up -d
+ 1246  docker-compose ps
+ 1247  cat game_api.py
+ 1248  docker-compose exec mids   ab     -n 10     -H "Host: user1.comcast.com"     http://localhost:5000/
+ 1249  docker-compose exec mids   ab     -n 10     -H "Host: user1.comcast.com"     http://localhost:5000/purchase_a_sword
+ 1250  docker-compose exec mids   ab     -n 10     -H "Host: user2.att.com"     http://localhost:5000/
+ 1251  docker-compose exec mids   ab     -n 10     -H "Host: user2.att.com"     http://localhost:5000/purchase_a_sword
+ 1252  docker-compose exec cloudera hadoop fs -ls /tmp/
+ 1253  exit
+ 1254  cd w205/assignment-12-dwang-ischool/
+ 1255  git status
+ 1256  git add .
+ 1257  git commit -m "uploading partial hw"
+ 1258  git push origin master
+ 1259  exit
+ 1260  cd w205/assignment-12-dwang-ischool/
+ 1261  docker-compose ps 
+ 1262  cd w205/assignment-12-dwang-ischool/
+ 1263  docker-compose ps
+ 1264  docker-compose down
+ 1265  docker-compose up -d
+ 1266  docker compose ps
+ 1267  docker-compose ps
+ 1268  cat filter_swords_batch.py
+ 1269  cat filter_swords_stream.py
+ 1270  docker-compose exec mids ab -n 10 -H "Host: user1.comcast.com" http://localhost:5000/
+ 1271  docker-compose exec mids ab -n 10 -H "Host: user1.comcast.com" http://localhost:5000/purchase_a_sword
+ 1272  docker-compose exec mids ab -n 10 -H "Host: user2.att.com" http://localhost:5000/
+ 1273  docker-compose exec mids ab -n 10 -H "Host: user2.att.com" http://localhost:5000/purchase_a_sword
+ 1274  while true; do   docker-compose exec mids     ab -n 10 -H "Host: user1.comcast.com"       http://localhost:5000/purchase_a_sword;   sleep 10; done
+ 1275  docker-compose down
+ 1276  history > history.txt

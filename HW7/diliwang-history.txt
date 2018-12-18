@@ -1,0 +1,46 @@
+    1  ls
+    2  cd w205
+    3  ls
+    4  cd assignment-07-dwang-ischool
+    5  ls
+    6  cp ../course-content/07-Sourcing-Data/docker-compose.yml .
+    7  ls
+    8  cat docker-compose.yml
+    9  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+   10  docker-compose up -d
+   11  docker-compose logs -f kafka
+   12  docker-compose ps
+   13  docker-compose exec kafka kafka-topics --create --topic AssessmentData --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+   14  docker-compose exec kafka kafka-topics --describe --topic AssessmentData --zookeeper zookeeper:32181
+   15  docker-compose exec mids bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json
+"
+   16  docker-compose exec mids bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq'.'"
+   17  docker-compose exec mids bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.'"
+   18  docker-compose exec mids bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c"
+   19  docker-compose exec spark pyspark
+   20  docker-compose exec spark cat /root/.python_history
+   21  docker-compose exec spark cat /root/.python_history | echo "spark_history.txt"
+   22  docker-compose exec spark cat /root/.python_history > spark_history.txt
+   23  docker-compose down
+   24  history > diliwang-history.txt
+   25  cp ../course-content/07-Sourcing-Data/docker-compose.yml .
+   26  cat docker-compose.yml
+   27  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+   28  docker-compose up -d
+   29  docker-compose logs -f kafka
+   30  12 docker-compose ps
+   31  docker-compose ps
+   32  docker-compose exec kafka kafka-topics --create --topic AssessmentData --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+   33  docker-compose exec kafka kafka-topics --describe --topic AssessmentData --zookeeper zookeeper:32181
+   34  docker-compose exec mids bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json"
+   35  docker-compose exec mids bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.'"
+   36  docker-compose exec mids bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c"
+   37  docker-compose exec mids  bash -c "cat /w205/assignment-07-dwang-ischool/assessment-attempts-20180128-121051-nested.json\
+ | jq '.[]' -c\
+ | kafkacat -P -b kafka:29092 -t AssessmentData && echo 'Published Messages.'"
+   38  history > diliwang-history.txt
+   39  docker-compose exec spark pyspark
+   40  docker-compose exec spark cat /root/.python_history
+   41  docker-compose exec spark cat /root/.python_history > pyspark_history.txt
+   42  docker-compose down
+   43  history > diliwang-history.txt
